@@ -20,11 +20,12 @@
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: var(--whiteColor);
   width: 100%;
   padding: 1rem;
   z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
 }
 
 .logo {
@@ -48,8 +49,9 @@
     height: max-content;
     width: 80%;
     border-radius: 1rem;
-    top: 6rem;
+    top: -500rem;
     left: 50%;
+    padding: 1rem;
     transform: translate(-50%);
     z-index: 2000;
     box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
@@ -88,6 +90,9 @@
   }
   .navBar .closeNavbar:hover {
     color: var(--SecondaryColor);
+  }
+  .activeNavbar {
+    top: 7rem;
   }
 }
 .toggleNavbar .icon {
