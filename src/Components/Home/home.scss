@@ -29,8 +29,8 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgb(47, 106, 127);
-    mix-blend-mode: hard-light;
+    // background: rgb(47, 106, 127);
+    // mix-blend-mode: hard-light;
     top: 0;
     bottom: 0;
     z-index: 1;
@@ -156,12 +156,13 @@
       width: 100%;
       justify-content: space-between;
 
-      .icons {
+      .icon {
         font-size: 20px;
         margin: 0 5px;
         color: var(--whiteColor);
         font-weight: 600;
-        &: hover {
+      
+        &:hover{
           color: var(--PrimaryColor);
         }
       }
