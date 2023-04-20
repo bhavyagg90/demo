@@ -1,7 +1,11 @@
 :root {
   --PrimaryColor: hsl(199, 100%, 33%);
   --SecondaryColor: hsl(187, 85%, 43%);
-  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(201, 33%, 16%);
   --textColor: hsl(240, 4%, 36%);
@@ -9,7 +13,7 @@
   --greyText: rgb(190, 190, 190);
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
-  --cardBG: rgb(225,225,235);
+  --cardBG: rgb(225, 225, 235);
 }
 
 .footer {
@@ -172,4 +176,66 @@
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover .icon {
   color: var(--SecondaryColor);
+}
+
+@media screen and (min-width: 500px) {
+  .footer .secContent .footerCard .footerLinks {
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 660px) {
+  .footer .secContent .contactDiv {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .secContent .contactDiv .inputDiv {
+    width: -moz-max-content;
+    width: max-content;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .footer .secContent .contactDiv .inputDiv input {
+    width: 60%;
+  }
+  .footer .secContent .contactDiv .inputDiv .btn {
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+@media screen and (min-width: 840px) {
+  .footer {
+    padding: 5rem 0;
+  }
+  .footer .secContent .footerCard {
+    flex-direction: row;
+  }
+  .footer .secContent .footerCard .footerLinks {
+    grid-template-columns: repeat(3, 1fr) !important;
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer .secContent .footerCard {
+    padding: 3rem 1rem;
+  }
+  .footer .secContent .footerCard .footerIntro .footerParagraph {
+    font-size: 15px;
+    color: var(--textColor);
+  }
+  .footer .secContent .footerCard .footerIntro .footerSocials {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+  .footer .secContent .footerCard .footerIntro .footerSocials .icon {
+    color: var(--textColor);
+    font-size: 25px;
+  }
+  .footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
+    color: var(--PrimaryColor);
+  }
+  .footer .secContent .footerCard .footerLinks .linkGroup .footerList {
+    font-size: 16px;
+    padding: 5px 0;
+  }
 }/*# sourceMappingURL=footer.css.map */

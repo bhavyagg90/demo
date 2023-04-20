@@ -111,7 +111,7 @@ const Main = () => {
     <section  className="main container section">
       <div className="secTitle">
         <h3 data-aos="fade-right" className="title">
-          Most visited destinations
+          Most visited Destinations
         </h3>
       </div>
 
